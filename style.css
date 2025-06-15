@@ -1,5 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit';
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #fff;
+    --color: #000;
+}
+
+
 body{
-    background: #000;
-    color: #fff;
-    font-size: 2em;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.light-theme{
+    background: var(--bg-color);
+    color: var(--color);
+    transition: all 0.5s ease-in-out;
+}
+
+.dark-theme{
+    background: var(--color);
+    color: var(--bg-color);
+    transition: all 0.5s ease-in-out;
+}
+
+.theme-toggle{
+    position: relative;
+    left: 160px;
+    bottom: 13px;
+    padding: 0.6em 1em;
+    border-radius: 50%;
+    border: none;
+    background: #cfcfcf;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.clock-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fcfafa2c;
+    gap: 0.5em;
+    width: 55%;
+    padding: 3em;
+    max-width: 455px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 1px 1px 10px #00040c56;
+}
+
+.date-container, .time-container{
+    box-shadow: 1px 1px 10px #1484c5;
+    padding: 1em 0.5em;
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+.date-heading, .time-heading{
+    font-size: 2rem;
+    cursor: pointer;
 }

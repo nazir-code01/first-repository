@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo html file</title>
+    <title>Digital clock</title>
 </head>
-<body>
-    <p>This is a demo html file</p>
+
+<body class="light-theme">
+
+    <div class="container">
+        <div class="clock-container">
+            <button class="theme-toggle">
+                <i class="fa-solid fa-moon" id="icon"></i>
+            </button>
+            <div class="time-container">
+                <h1 class="time-heading"></h1>
+            </div>
+            <div class="date-container">
+                <h1 class="date-heading"></h1>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/f1050aff1a.js" crossorigin="anonymous"></script>
+
 </html>
